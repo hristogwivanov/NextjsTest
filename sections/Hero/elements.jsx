@@ -38,3 +38,4 @@ export const StyledImageContainer = styled(({ ...props }) => <div {...props} />)
   height: 100%;
   margin-left: auto;
 `;
+
