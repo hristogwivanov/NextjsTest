@@ -19,6 +19,7 @@ import {
     StyledCard,
     StyledCardPicContainer,
     StyledCardTextContainer,
+    StyledCardHeading,
 } from "./elements";
 
 const videoProps = {
@@ -52,6 +53,27 @@ const iconHeight = 120;
 const brief = {
     src: "/img/brief.png",
     alt: "briefing",
+};
+
+const contentFirstCard = {
+    title: "Brief",
+    bold: " brief writing or simple guidance ",
+    descr1: "Complete",
+    descr2: "on what to include, we`ve got you covered.",
+};
+
+const contentSecondCard = {
+    title: "Search",
+    bold: " criteria matching ",
+    descr1: "In-depth agency search covering,",
+    descr2: "door knocking and due-dilligence vetting",
+};
+
+const contentThirdCard = {
+    title: "Pitch",
+    bold: " pitch management, ",
+    descr1: "Comprehensive",
+    descr2: "including comms, diary management and pitch hosting",
 };
 
 export const Selection = ({ image, title, description, ctaText, ...props }) => {
@@ -91,7 +113,11 @@ export const Selection = ({ image, title, description, ctaText, ...props }) => {
                                         height={iconHeight}
                                     />
                                 </StyledCardPicContainer>
-                                <StyledCardTextContainer></StyledCardTextContainer>
+                                <StyledCardTextContainer>
+                                    <StyledCardHeading>
+                                        {contentFirstCard.title}
+                                    </StyledCardHeading>
+                                </StyledCardTextContainer>
                             </StyledCard>
                         </StyledCardContainer>
                     </StyledContentContainer>

@@ -43,3 +43,11 @@ export const StyledSectionParagraph = styled((props) => <p {...props} />)`
   line-height: 1.5rem;
   font-weight: 400;
 `;
+
+export const StyledCardHeading = styled((props) => <label {...props} />)`
+  font-family: Poppins;
+  font-size: 1.7rem;
+  line-height: 1.7rem;
+  font-weight: 600;
+  display: inline-block; //bcs <label> is display: inline by default
+`;
