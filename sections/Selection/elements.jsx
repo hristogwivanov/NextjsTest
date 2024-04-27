@@ -1,4 +1,6 @@
 import styled from "styled-components";
+import { Card } from "~/collections";
+
 import {
     Button,
     SectionContainer,
@@ -6,6 +8,9 @@ import {
     SectionSubheading,
     BackgroundImageContainer,
     ContentContainer,
+    VideoContainer,
+    CardContainer,
+    CardPicContainer,
 } from "~/components";
 
 export const StyledContainer = styled(({ height, ...props }) => (
@@ -56,9 +61,9 @@ export const StyledImageContainer = styled(({ ...props }) => (
     margin-left: auto;
 `;
 
-export const StyledMainContainer = styled(({ ...props }) => <div {...props} />)`
-
-`;
+export const StyledMainContainer = styled(({ ...props }) => (
+    <div {...props} />
+))``;
 
 export const StyledBackgroundImageContainer = styled(({ ...props }) => (
     <BackgroundImageContainer {...props} />
@@ -82,4 +87,35 @@ export const StyledContentContainer = styled(({ ...props }) => (
         flex-direction: row;
         margin-left: 12rem;
     }
-    `;
+`;
+
+export const StyledSectionContainer = styled(({ ...props }) => (
+    <SectionContainer {...props} />
+))`
+    width: 25rem;
+    margin: auto;
+`;
+
+export const StyledVideoContainer = styled(({ ...props }) => (
+    <VideoContainer {...props} />
+))`
+    margin-top: -3rem;
+`;
+
+export const StyledCardContainer = styled(({ ...props }) => (
+    <CardContainer {...props} />
+))`
+    @media only screen and (min-width: 1024px) {
+        margin-left: 6rem;
+        justify-content: space-between;
+        padding-bottom: 1rem;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+`;
+
+export const StyledCard = styled(({ ...props }) => <Card {...props} />)``;
+
+export const StyledCardPicContainer = styled(({ ...props }) => (
+    <CardPicContainer {...props} />
+))``;

@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Card from "~/collections/Card"; // Import the Card component
+import { theme } from "~/styles";
 
 import {
     StyledTextContainer,
@@ -12,13 +13,36 @@ import {
     StyledMainContainer,
     StyledBackgroundImageContainer,
     StyledContentContainer,
+    StyledSectionContainer,
+    StyledVideoContainer,
+    StyledCardContainer,
+    StyledCard,
+    StyledCardPicContainer,
 } from "./elements";
 
+const videoProps = {
+    src: "/img/video.png",
+    alt: "video",
+    width: 250,
+    height: 398,
+};
+
 const cardProps = {
-    image: { src: "/img/heroimg.png", alt: "", width: 1000, height: 1680 },
     title: "Agency procurement, outsourced.",
     description: "Start the process here",
     ctaText: "Start",
+};
+
+const cardSize = {
+    small: 32.5,
+    medium: 35,
+    big: 37.5,
+};
+
+const cardBackGroundColor = {
+    light: theme.grayF8,
+    medium: theme.grayF0,
+    dark: theme.grayE2,
 };
 
 export const Selection = ({ image, title, description, ctaText, ...props }) => {
@@ -29,9 +53,30 @@ export const Selection = ({ image, title, description, ctaText, ...props }) => {
                 <StyledDescription>{description}</StyledDescription>
             </StyledTextContainer>
             <StyledMainContainer>
-                <StyledBackgroundImageContainer width={image.width} height={image.height}>
+                <StyledBackgroundImageContainer
+                    width={image.width}
+                    height={image.height}
+                >
                     <StyledContentContainer>
-
+                        <StyledSectionContainer>
+                            <StyledVideoContainer>
+                                <Image
+                                    layout="responsive"
+                                    src={videoProps.src}
+                                    alt={videoProps.alt}
+                                    width={videoProps.width}
+                                    height={videoProps.height}
+                                />
+                            </StyledVideoContainer>
+                        </StyledSectionContainer>
+                        <StyledCardContainer>
+                            <StyledCard
+                                size={cardSize.small}
+                                bgColor={cardBackGroundColor.light}
+                            >
+                                <StyledCardPicContainer></StyledCardPicContainer>
+                            </StyledCard>
+                        </StyledCardContainer>
                     </StyledContentContainer>
                 </StyledBackgroundImageContainer>
             </StyledMainContainer>
