@@ -51,3 +51,10 @@ export const StyledCardHeading = styled((props) => <label {...props} />)`
   font-weight: 600;
   display: inline-block; //bcs <label> is display: inline by default
 `;
+
+export const StyledCardDescription = styled((props) => <p {...props} />)`
+  font-family: Poppins;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+`;

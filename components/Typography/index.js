@@ -5,3 +5,4 @@ export * from "./SectionInnerHeading";
 export * from "./SectionParagraph";
 export * from "./SectionTinyHeading";
 export * from "./CardHeading";
+export * from "./CardDescription";

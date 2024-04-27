@@ -12,7 +12,8 @@ import {
     CardContainer,
     CardPicContainer,
     CardTextContainer,
-    CardHeading
+    CardHeading,
+    CardDescription,
 } from "~/components";
 
 export const StyledContainer = styled(({ height, ...props }) => (
@@ -128,5 +129,12 @@ export const StyledCardTextContainer = styled(({ ...props }) => (
 
 export const StyledCardHeading = styled((props) => <CardHeading {...props} />)`
     margin: 0.5rem 0 0 0;
+    color: black;
+`;
+
+export const StyledCardDescription = styled((props) => (
+    <CardDescription {...props} />
+))`
+    margin: 1rem 2.5rem 0 0;
     color: black;
 `;
