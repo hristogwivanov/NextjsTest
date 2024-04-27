@@ -49,17 +49,17 @@ const iconWidth = 160;
 const iconHeight = 160;
 
 const brief = {
-    src: "/img/brief.png",
+    src: "/img/brief-ts.png",
     alt: "briefing",
 };
 
 const search = {
-    src: "/img/search.png",
+    src: "/img/search-ts.png",
     alt: "search",
 };
 
 const pitch = {
-    src: "/img/pitch.png",
+    src: "/img/pitch-ts.png",
     alt: "pitch",
 };
 
@@ -135,8 +135,8 @@ export const Selection = ({ image, title, description, ctaText, ...props }) => {
                                 </StyledCardTextContainer>
                             </StyledCard>
                             <StyledCard
-                                size={cardSize.small}
-                                bgColor={cardBackGroundColor.light}
+                                size={cardSize.medium}
+                                bgColor={cardBackGroundColor.medium}
                             >
                                 <StyledCardPicContainer>
                                     <Image
@@ -160,8 +160,8 @@ export const Selection = ({ image, title, description, ctaText, ...props }) => {
                                 </StyledCardTextContainer>
                             </StyledCard>
                             <StyledCard
-                                size={cardSize.small}
-                                bgColor={cardBackGroundColor.light}
+                                size={cardSize.big}
+                                bgColor={cardBackGroundColor.dark}
                             >
                                 <StyledCardPicContainer>
                                     <Image
