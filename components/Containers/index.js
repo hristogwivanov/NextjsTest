@@ -4,3 +4,4 @@ export * from "./ContentContainer";
 export * from "./VideoContainer";
 export * from "./CardContainer";
 export * from "./CardPicContainer";
+export * from "./CardTextContainer";

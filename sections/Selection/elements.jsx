@@ -11,6 +11,7 @@ import {
     VideoContainer,
     CardContainer,
     CardPicContainer,
+    CardTextContainer,
 } from "~/components";
 
 export const StyledContainer = styled(({ height, ...props }) => (
@@ -118,4 +119,8 @@ export const StyledCard = styled(({ ...props }) => <Card {...props} />)``;
 
 export const StyledCardPicContainer = styled(({ ...props }) => (
     <CardPicContainer {...props} />
+))``;
+
+export const StyledCardTextContainer = styled(({ ...props }) => (
+    <CardTextContainer {...props} />
 ))``;

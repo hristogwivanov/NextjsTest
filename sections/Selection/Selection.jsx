@@ -18,6 +18,7 @@ import {
     StyledCardContainer,
     StyledCard,
     StyledCardPicContainer,
+    StyledCardTextContainer,
 } from "./elements";
 
 const videoProps = {
@@ -43,6 +44,14 @@ const cardBackGroundColor = {
     light: theme.grayF8,
     medium: theme.grayF0,
     dark: theme.grayE2,
+};
+
+const iconWidth = 120;
+const iconHeight = 120;
+
+const brief = {
+    src: "/img/brief.png",
+    alt: "briefing",
 };
 
 export const Selection = ({ image, title, description, ctaText, ...props }) => {
@@ -74,7 +83,15 @@ export const Selection = ({ image, title, description, ctaText, ...props }) => {
                                 size={cardSize.small}
                                 bgColor={cardBackGroundColor.light}
                             >
-                                <StyledCardPicContainer></StyledCardPicContainer>
+                                <StyledCardPicContainer>
+                                    <Image
+                                        src={brief.src}
+                                        alt={brief.alt}
+                                        width={iconWidth}
+                                        height={iconHeight}
+                                    />
+                                </StyledCardPicContainer>
+                                <StyledCardTextContainer></StyledCardTextContainer>
                             </StyledCard>
                         </StyledCardContainer>
                     </StyledContentContainer>
