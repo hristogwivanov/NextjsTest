@@ -1,15 +1,11 @@
 import Image from "next/image";
-import Card from "~/collections/Card"; // Import the Card component
 import { theme } from "~/styles";
 
 import {
     StyledTextContainer,
     StyledContainer,
-    StyledGetStartedBtn,
     StyledTitle,
     StyledDescription,
-    StyledCTAContainer,
-    StyledImageContainer,
     StyledMainContainer,
     StyledBackgroundImageContainer,
     StyledContentContainer,
@@ -49,12 +45,22 @@ const cardBackGroundColor = {
     dark: theme.grayE2,
 };
 
-const iconWidth = 120;
-const iconHeight = 120;
+const iconWidth = 160;
+const iconHeight = 160;
 
 const brief = {
     src: "/img/brief.png",
     alt: "briefing",
+};
+
+const search = {
+    src: "/img/search.png",
+    alt: "search",
+};
+
+const pitch = {
+    src: "/img/pitch.png",
+    alt: "pitch",
 };
 
 const contentFirstCard = {
@@ -124,6 +130,57 @@ export const Selection = ({ image, title, description, ctaText, ...props }) => {
                                         <StyledCardBoldText>
                                             {contentFirstCard.bold}
                                         </StyledCardBoldText>
+                                        {contentFirstCard.end}
+                                    </StyledCardDescription>
+                                </StyledCardTextContainer>
+                            </StyledCard>
+                            <StyledCard
+                                size={cardSize.small}
+                                bgColor={cardBackGroundColor.light}
+                            >
+                                <StyledCardPicContainer>
+                                    <Image
+                                        src={search.src}
+                                        alt={search.alt}
+                                        width={iconWidth}
+                                        height={iconHeight}
+                                    />
+                                </StyledCardPicContainer>
+                                <StyledCardTextContainer>
+                                    <StyledCardHeading>
+                                        {contentSecondCard.title}
+                                    </StyledCardHeading>
+                                    <StyledCardDescription>
+                                        {contentSecondCard.start}
+                                        <StyledCardBoldText>
+                                            {contentSecondCard.bold}
+                                        </StyledCardBoldText>
+                                        {contentSecondCard.end}
+                                    </StyledCardDescription>
+                                </StyledCardTextContainer>
+                            </StyledCard>
+                            <StyledCard
+                                size={cardSize.small}
+                                bgColor={cardBackGroundColor.light}
+                            >
+                                <StyledCardPicContainer>
+                                    <Image
+                                        src={pitch.src}
+                                        alt={pitch.alt}
+                                        width={iconWidth}
+                                        height={iconHeight}
+                                    />
+                                </StyledCardPicContainer>
+                                <StyledCardTextContainer>
+                                    <StyledCardHeading>
+                                        {contentThirdCard.title}
+                                    </StyledCardHeading>
+                                    <StyledCardDescription>
+                                        {contentThirdCard.start}
+                                        <StyledCardBoldText>
+                                            {contentThirdCard.bold}
+                                        </StyledCardBoldText>
+                                        {contentThirdCard.end}
                                     </StyledCardDescription>
                                 </StyledCardTextContainer>
                             </StyledCard>
