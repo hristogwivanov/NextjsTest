@@ -58,3 +58,12 @@ export const StyledCardDescription = styled((props) => <p {...props} />)`
   line-height: 1.5rem;
   font-weight: 400;
 `;
+
+export const StyledCardBoldText = styled((props) => <div {...props} />)`
+  font-family: Poppins;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  margin: auto;
+  display: inline;
+`;

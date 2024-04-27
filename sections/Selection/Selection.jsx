@@ -21,6 +21,7 @@ import {
     StyledCardTextContainer,
     StyledCardHeading,
     StyledCardDescription,
+    StyledCardBoldText,
 } from "./elements";
 
 const videoProps = {
@@ -120,6 +121,9 @@ export const Selection = ({ image, title, description, ctaText, ...props }) => {
                                     </StyledCardHeading>
                                     <StyledCardDescription>
                                         {contentFirstCard.start}
+                                        <StyledCardBoldText>
+                                            {contentFirstCard.bold}
+                                        </StyledCardBoldText>
                                     </StyledCardDescription>
                                 </StyledCardTextContainer>
                             </StyledCard>
