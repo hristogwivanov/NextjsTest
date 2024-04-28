@@ -34,13 +34,13 @@ export const StyledGetStartedBtn = styled((props) => (
 
 export const StyledTitle = styled((props) => <SectionBigHeading {...props} />)`
     margin: 0;
-    color: black;
 `;
 
 export const StyledDescription = styled((props) => (
     <SectionSubheading {...props} />
 ))`
     margin: 0 0 0;
+    font-size: 1.5rem;
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
@@ -67,7 +67,9 @@ export const StyledImageContainer = styled(({ ...props }) => (
 
 export const StyledMainContainer = styled(({ ...props }) => (
     <div {...props} />
-))``;
+))`
+margin-left: -28rem;
+`;
 
 export const StyledBackgroundImageContainer = styled(({ ...props }) => (
     <BackgroundImageContainer {...props} />
