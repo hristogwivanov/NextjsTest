@@ -14,7 +14,7 @@ import {
     CardTextContainer,
     CardHeading,
     CardDescription,
-    CardBoldText
+    CardBoldText,
 } from "~/components";
 
 export const StyledContainer = styled(({ height, ...props }) => (
@@ -65,10 +65,10 @@ export const StyledImageContainer = styled(({ ...props }) => (
     margin-left: auto;
 `;
 
-export const StyledMainContainer = styled(({ ...props }) => (
-    <div {...props} />
-))`
-margin-left: -28rem;
+export const StyledMainContainer = styled(({ ...props }) => <div {...props} />)`
+    @media only screen and (min-width: 1024px) {
+        margin-left: -28rem;
+    }
 `;
 
 export const StyledBackgroundImageContainer = styled(({ ...props }) => (
