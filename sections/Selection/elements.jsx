@@ -40,7 +40,7 @@ export const StyledDescription = styled((props) => (
     <SectionSubheading {...props} />
 ))`
     margin: 0 0 0;
-    font-size: 1.5rem;
+    font-size: 1.48rem;
 `;
 
 export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
@@ -58,7 +58,7 @@ export const StyledCTAContainer = styled(({ ...props }) => <div {...props} />)`
 export const StyledImageContainer = styled(({ ...props }) => (
     <div {...props} />
 ))`
-    max-width: 32.03rem;
+    max-width: 32rem;
     max-height: 65rem;
     width: 100%;
     height: 100%;
@@ -67,7 +67,7 @@ export const StyledImageContainer = styled(({ ...props }) => (
 
 export const StyledMainContainer = styled(({ ...props }) => <div {...props} />)`
     @media only screen and (min-width: 1024px) {
-        margin-left: -28rem;
+        margin-left: -30rem;
     }
 `;
 
@@ -112,7 +112,7 @@ export const StyledCardContainer = styled(({ ...props }) => (
     <CardContainer {...props} />
 ))`
     @media only screen and (min-width: 1024px) {
-        margin-left: 6rem;
+        margin-left: 4.5rem;
         justify-content: space-between;
         padding-bottom: 1rem;
         margin-top: 0;
@@ -120,11 +120,16 @@ export const StyledCardContainer = styled(({ ...props }) => (
     }
 `;
 
-export const StyledCard = styled(({ ...props }) => <Card {...props} />)``;
+export const StyledCard = styled(({ ...props }) => <Card {...props} />)`
+margin-top: -0.6rem;
+margin-left: 0.2rem;
+`;
 
 export const StyledCardPicContainer = styled(({ ...props }) => (
     <CardPicContainer {...props} />
-))``;
+))`
+margin-top: 2.4rem;
+`;
 
 export const StyledCardTextContainer = styled(({ ...props }) => (
     <CardTextContainer {...props} />
@@ -132,13 +137,15 @@ export const StyledCardTextContainer = styled(({ ...props }) => (
 
 export const StyledCardHeading = styled((props) => <CardHeading {...props} />)`
     margin: 0.5rem 0 0 0;
-    color: black;
+    font-size: 1.5rem;
 `;
 
 export const StyledCardDescription = styled((props) => (
     <CardDescription {...props} />
 ))`
-    margin: 1rem 2.5rem 0 0;
+    margin: 0.4rem 2.5rem 0 0;
+    font-size: 1.2rem;
+    line-height: 1.48;
     color: black;
 `;
 

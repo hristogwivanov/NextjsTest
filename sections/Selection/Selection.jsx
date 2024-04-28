@@ -23,14 +23,8 @@ import {
 const videoProps = {
     src: "/img/video.png",
     alt: "video",
-    width: 250,
-    height: 398,
-};
-
-const cardProps = {
-    title: "Agency procurement, outsourced.",
-    description: "Start the process here",
-    ctaText: "Start",
+    width: 260,
+    height: 410,
 };
 
 const cardSize = {
